@@ -1,17 +1,26 @@
 name: quizz_app
-description: "A new Flutter project."
+description: "Aplikasi Kuis Pilihan Ganda Multi-Subject untuk SMA"
 publish_to: 'none'
 version: 1.0.0+1
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
 
-# 1. TAMBAHKAN DEPENDENSI INI
 dependencies:
   flutter:
     sdk: flutter
+  
+  # State Management
   provider: ^6.0.5
+  
+  # UI & Fonts
   google_fonts: ^6.1.0
+  iconsax: ^0.0.8
+  
+  # Animations
+  lottie: ^3.0.0
+  
+  # Material Icons
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
@@ -21,15 +30,3 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
-  # 2. TAMBAHKAN BAGIAN ASET INI
-  assets:
-    - assets/images/quiz_logo.png
-
-  # 3. TAMBAHKAN BAGIAN FONT INI
-  fonts:
-    - family: Poppins
-      fonts:
-        - asset: assets/fonts/Poppins-Regular.ttf
-        - asset: assets/fonts/Poppins-Bold.ttf
-          weight: 700
