@@ -87,7 +87,7 @@ class QuizProvider with ChangeNotifier {
     notifyListeners();
   }
 
-  // Reset quiz (keep subject and user name)
+  // 🔧 FIX: Reset quiz tapi TETAP SIMPAN userName dan selectedSubject
   void resetQuiz() {
     _currentQuestionIndex = 0;
     _score = 0;
@@ -100,7 +100,7 @@ class QuizProvider with ChangeNotifier {
     notifyListeners();
   }
 
-  // Complete reset (back to welcome screen)
+  // Complete reset (back to welcome screen) - BARU dipanggil saat logout/keluar
   void completeReset() {
     _userName = null;
     _selectedSubject = null;

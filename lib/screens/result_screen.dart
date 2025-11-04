@@ -4,6 +4,7 @@ import 'package:iconsax/iconsax.dart';
 import '../providers/quiz_provider.dart';
 import '../constants/subject_colors.dart';
 import '../widgets/custom_button.dart';
+import 'quiz_screen.dart';
 import 'subject_selection_screen.dart';
 
 class ResultScreen extends StatefulWidget {
@@ -41,15 +42,21 @@ class _ResultScreenState extends State<ResultScreen>
     _animationController.forward();
   }
 
+  // 🔧 FIX: Reset quiz tapi JANGAN hapus userName dan selectedSubject
   void _retryQuiz(BuildContext context) {
     final provider = Provider.of<QuizProvider>(context, listen: false);
-    provider.resetQuiz();
-    Navigator.pop(context);
+    provider.resetQuiz(); // Ini sudah benar, cuma reset score dan questions
+    
+    // Langsung ke QuizScreen lagi
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (context) => const QuizScreen()),
+    );
   }
 
+  // 🔧 FIX: Jangan panggil completeReset, cukup navigasi aja
   void _backToHome(BuildContext context) {
-    final provider = Provider.of<QuizProvider>(context, listen: false);
-    provider.completeReset();
+    // Jangan reset provider di sini, biar nama user tetap ada
     Navigator.pushAndRemoveUntil(
       context,
       MaterialPageRoute(

@@ -5,6 +5,7 @@ import '../providers/quiz_provider.dart';
 import '../constants/subject_colors.dart';
 import '../widgets/subject_card.dart';
 import 'quiz_screen.dart';
+import 'welcome_screen.dart';
 
 class SubjectSelectionScreen extends StatefulWidget {
   const SubjectSelectionScreen({super.key});
@@ -35,16 +36,14 @@ class _SubjectSelectionScreenState extends State<SubjectSelectionScreen>
     {
       'name': 'Fisika',
       'description': 'Hukum Alam & Energi',
-      // Ganti icon yang tidak tersedia
-      'icon': Iconsax.code, // pengganti Iconsax.atom
+      'icon': Iconsax.code,
       'color': SubjectColors.physics,
       'lightColor': SubjectColors.physicsLight,
     },
     {
       'name': 'Kimia',
       'description': 'Reaksi & Senyawa',
-      // Ganti icon yang tidak tersedia
-      'icon': Icons.science_outlined, // pengganti Iconsax.flask
+      'icon': Icons.science_outlined,
       'color': SubjectColors.chemistry,
       'lightColor': SubjectColors.chemistryLight,
     },
@@ -91,9 +90,8 @@ class _SubjectSelectionScreenState extends State<SubjectSelectionScreen>
       ),
     );
 
-    // Delay untuk efek loading
     Future.delayed(const Duration(milliseconds: 1200), () {
-      if (!mounted) return; // 🔹 Hindari context setelah async gap
+      if (!mounted) return;
       Navigator.pop(context); // Close dialog
       Navigator.push(
         context,
@@ -117,6 +115,18 @@ class _SubjectSelectionScreenState extends State<SubjectSelectionScreen>
     });
   }
 
+  // 🔧 FIX: Tombol back yang bener, balik ke WelcomeScreen + reset provider
+  void _handleBackButton() {
+    final provider = Provider.of<QuizProvider>(context, listen: false);
+    provider.completeReset(); // Reset semua data
+    
+    Navigator.pushAndRemoveUntil(
+      context,
+      MaterialPageRoute(builder: (context) => const WelcomeScreen()),
+      (route) => false,
+    );
+  }
+
   @override
   void dispose() {
     _animationController.dispose();
@@ -131,9 +141,10 @@ class _SubjectSelectionScreenState extends State<SubjectSelectionScreen>
     return Scaffold(
       appBar: AppBar(
         title: const Text('Pilih Mata Pelajaran'),
+        // 🔧 FIX: Custom back button yang proper
         leading: IconButton(
           icon: const Icon(Iconsax.arrow_left),
-          onPressed: () => Navigator.pop(context),
+          onPressed: _handleBackButton,
         ),
       ),
       body: SafeArea(
