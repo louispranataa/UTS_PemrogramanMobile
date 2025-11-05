@@ -1,16 +1,8 @@
-# quizz_app
+Nama : Lois Pranata Sembiring
+NIM  : 231401116
+Lab  : PM4
 
-A new Flutter project.
+Nama Aplikasi : Quiz App SMA
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Quiz App SMA adalah aplikasi kuis interaktif berbasis Flutter yang dirancang untuk membantu siswa SMA menguji pengetahuan mereka dalam berbagai mata pelajaran.  
+Aplikasi ini menampilkan sistem kuis pilihan ganda multi-subject, dilengkapi dengan mode terang dan gelap (light/dark mode), animasi Lottie yang menarik, serta sistem skor yang memperlihatkan hasil kuis secara langsung setelah menjawab.
