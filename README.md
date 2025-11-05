@@ -16,3 +16,7 @@ Aplikasi ini menampilkan sistem kuis pilihan ganda multi-subject, dilengkapi den
 <img width="200" height="800" alt="Image" src="https://github.com/user-attachments/assets/aef526e5-07d3-4d27-8b57-db438ef0680a" />
 <img width="200" height="800" alt="Image" src="https://github.com/user-attachments/assets/0a889061-4a51-451e-ada9-47f37d32173f" />
 <img width="200" height="800" alt="Image" src="https://github.com/user-attachments/assets/a3479c16-949e-476e-a9fe-6d75f206860b" />
+
+
+Link Figma:
+https://www.figma.com/design/xQzIZRBueogKxLw9sV4OVq/Untitled?node-id=0-1&t=ofeV313xKw0hvYcD-1
