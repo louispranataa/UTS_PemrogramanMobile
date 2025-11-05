@@ -1,5 +1,7 @@
 Nama : Lois Pranata Sembiring
+
 NIM  : 231401116
+
 Lab  : PM4
 
 Nama Aplikasi : Quiz App SMA
