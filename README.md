@@ -7,4 +7,10 @@ Nama Aplikasi : Quiz App SMA
 Quiz App SMA adalah aplikasi kuis interaktif berbasis Flutter yang dirancang untuk membantu siswa SMA menguji pengetahuan mereka dalam berbagai mata pelajaran.  
 Aplikasi ini menampilkan sistem kuis pilihan ganda multi-subject, dilengkapi dengan mode terang dan gelap (light/dark mode), animasi Lottie yang menarik, serta sistem skor yang memperlihatkan hasil kuis secara langsung setelah menjawab.
 
-<img width="471" height="1066" alt="Image" src="https://github.com/user-attachments/assets/ed658e77-cc83-44d3-9d03-e3a6d28a8d3a" />
+
+<img width="200" height="800" alt="Image" src="https://github.com/user-attachments/assets/380bcbb5-9e24-48c3-94ba-9cf33b946c29" />
+<img width="200" height="800" alt="Image" src="https://github.com/user-attachments/assets/c7539751-c571-4332-b1bd-e1f719518c34" />
+<img width="200" height="800" alt="Image" src="https://github.com/user-attachments/assets/694ac478-6c3d-4f1e-ad28-1c66e9b714be" />
+<img width="200" height="800" alt="Image" src="https://github.com/user-attachments/assets/aef526e5-07d3-4d27-8b57-db438ef0680a" />
+<img width="200" height="800" alt="Image" src="https://github.com/user-attachments/assets/0a889061-4a51-451e-ada9-47f37d32173f" />
+<img width="200" height="800" alt="Image" src="https://github.com/user-attachments/assets/a3479c16-949e-476e-a9fe-6d75f206860b" />
